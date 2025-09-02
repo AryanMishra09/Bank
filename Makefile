@@ -6,7 +6,7 @@ build:
 	@go build -0 bin/main cmd/main.go
 
 test: 
-	@go test -v ./...
+	@go test -v -cover ./...
 
 run: build
 	@./bin/main
