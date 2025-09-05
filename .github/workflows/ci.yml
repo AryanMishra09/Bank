@@ -21,11 +21,14 @@ jobs:
           POSTGRES_USER: admin
           POSTGRES_PASSWORD: adminpassword
           POSTGRES_DB: bank
+        ports: 
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+        
 
     steps:
 
