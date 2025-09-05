@@ -26,3 +26,7 @@ migrate-down:
 .PHONY: sqlc
 sqlc: 
 	@sqlc generate
+
+.PHONY: server
+server: 
+	@go run main.go

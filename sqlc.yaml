@@ -12,4 +12,5 @@ sql:
         emit_prepared_queries: false # Use prepared statements or not
         emit_interface: false        # Generate interfaces for queries
         emit_exact_table_names: true # Use exact table names (instead of pluralized)
+        emit_empty_slices: true
  
