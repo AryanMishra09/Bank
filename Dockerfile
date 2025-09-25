@@ -16,4 +16,7 @@ WORKDIR /app
 
 COPY --from=builder /app/main .
 
+# Copy the config file (from your project root)
+COPY app.env .
+
 CMD ["/app/main"]
